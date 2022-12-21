@@ -1,0 +1,612 @@
+/*CSS RESET*/
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	border: 0;
+	vertical-align: baseline;
+	scroll-behavior: smooth;
+}
+
+/*IMPORTO LAS FUENTES PARA CALCULADORA*/
+@font-face {
+    font-family: lcdbig;
+    src: url("DSDIGI.TTF");
+}
+
+/*ESTILO DEL BODY*/
+body{
+	font-family: lato;
+	text-align: center;
+}
+
+/*ESTILO DEL HEADER Y CREACION MENU*/
+header{
+	position: relative;
+	font-size: 1.5em;
+    display: flex;
+    align-items: center;
+    height: auto;
+    background: #023047;
+    justify-content: space-between;
+    z-index: 500;
+}
+
+header img{
+	width: 220px;
+	margin-left: 55px;
+	padding: 10px;
+}
+
+header ul{
+	list-style: none;
+	display: flex;
+}
+
+header li a{
+	text-decoration: none;
+	color: #fff;
+	padding: 20px;
+	transition: all 0.8s ease;
+}
+
+header li a:hover{
+	background: #219EBC;
+}
+
+/* ESTILO BOTON REGRESAR */
+.btnup{
+	position: fixed;
+	height: 48px;
+	width: 48px;
+	background: #023047;
+	bottom: 75px;
+	right: 40px;
+	z-index: 1000;
+	border-radius: 50%;
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	visibility: hidden;
+	opacity: 0;
+	transition: all 1s ease;
+}
+
+.btnup.active{
+	visibility: visible;
+	opacity: 100;
+}
+
+.btnup a{
+	color: #FB8500;
+	z-index: 1500;
+	font-size: 40px;
+}
+
+
+/*ESTILO DEL BANNER*/
+#banner{
+	position: relative;
+	min-height: 80vh;
+	z-index: 75;
+	overflow: hidden;
+}
+
+#banner img{
+	z-index: 100;
+	position: absolute;
+	top: 30px;
+	left: 40px;
+}
+
+.screen{
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	background: rgba(255, 255, 255, 0.6);
+	z-index: 40;
+}
+
+#banner .lights{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 25;
+	animation: lights 20s linear infinite both;
+}
+
+.lights .light{
+	position: absolute;
+	width: 50%;
+	height: 50%;
+	z-index: 0;
+	filter: blur(20px);
+	animation: lights 20s linear infinite both;
+}
+
+.lights .light1{
+	left: 15%;
+	top: 0%;
+}
+
+.lights .light1 .path{
+	fill: rgba(33, 158, 188, 1);
+}
+
+.lights .light2{
+	right: 15%;
+	top: 0%;
+}
+
+.lights .light2 .path{
+	fill: rgba(255, 183, 3, 1);
+}
+
+.lights .light3{
+	right: 15%;
+	bottom: 0%;
+}
+
+.lights .light3 .path{
+	fill: rgba(142, 202, 230, 1);
+}
+
+.lights .light4{
+	bottom: 0%;
+	left: 15%;
+}
+
+.lights .light4 .path{
+	fill: rgba(2, 48, 71, 1);
+}
+
+@keyframes lights{
+	from{
+		transform:rotate(0deg) scale(2.5);
+	}
+	to{
+		transform:rotate(360deg) scale(2.5);
+	}
+}
+
+.texto-banner{	
+	z-index: 100;
+	position: absolute;
+	left: 400px;
+	top: 180px;
+	border-radius: 15px;
+	background: rgba(255,255,255,0.1);
+	padding: 10px 20px;
+	text-align: left;
+}
+
+#banner h1{
+	font-size: 48px;
+	font-weight: bold;
+}
+
+#banner h2{
+	font-size: 32px;
+}
+
+#banner ul{
+	list-style: none;
+	display: flex;
+	position: absolute;
+	top: 330px;
+	left: 400px;
+	justify-content: space-between;
+	z-index: 100;
+}
+
+#banner a{
+	border: 2px solid rgba(0,0,0,0.2);
+	border-radius: 15px;
+	text-decoration: none;
+	color: #000;
+	padding: 10px 20px;
+	font-size: 24px;
+	font-weight: 600;
+	transition: all 0.8s ease;
+	margin-right: 10px;
+	box-shadow: 2px 4px 4px 0px rgba(0, 0, 0, 0.8);
+}
+
+#banner a:hover{
+	background: #fff;
+	border: 2px solid #000;
+	box-shadow: 2px 4px 4px 0px rgba(0, 0, 0, 0);
+}
+
+#banner ul li span{
+	margin-left: 8px;
+}
+
+/* ESTILO ABOUT */
+#about, #skills{
+	background-image: url('../imagenes/backweb.jpg');
+	min-height: 100vh;
+	z-index: 100;
+	background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    padding: 28px 0;
+}
+
+.scrabout{
+	width: 100%;
+	height: 100%;
+	background: white;
+	filter: opacity(90%);
+	position: absolute;
+	z-index: 120;
+}
+
+#about h3{
+	font-size: 32px;
+	color: #023047;
+	z-index: 150;
+	margin-bottom: 15px;
+}
+
+#about ul{
+	list-style: none;
+	z-index: 150;
+	display: flex;
+}
+
+#about li{
+	padding: 10px;
+	margin: 10px;
+}
+
+#about li a{
+	font-size: 48px;
+	color: #023047;
+	transition: all 0.8s ease;
+}
+
+#about li a:hover{
+	color: #219EBC;
+}
+
+#about span{
+	color: #FB8500;
+}
+
+/*ESTILO PROYECTOS*/
+section{
+	width: 100%;
+	position: relative;
+	z-index: 100;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	display: flex;
+	flex-flow: column wrap;
+	transition: all 0.8s ease;
+}
+
+section h3{
+	font-size: 32px;
+	color: #023047;
+	z-index: 500;
+	margin-bottom: 15px;
+}
+
+section p{
+	font-size: 20px;
+	width: 75%;
+	color: #023047;
+	z-index: 500;
+	margin-bottom: 15px;
+}
+
+#projects .grid{
+	width: 90%;
+	max width: 40em;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(10rem,1fr));
+	gap: 1em;
+	margin: 1.2em 0;
+	margin-top: 20px;
+}
+
+#projects .article{
+	width: 100%;
+	min-height: 25vh;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	position: relative;
+}
+
+#projects img{
+	width: 100%;
+	max-width: 100%;
+	display: flex;
+	object-fit: cover;
+	object-position: cover cover;
+}
+
+#projects figure{
+	width: 100%;
+	max-width: 100%;
+	display: flex;
+	object-fit: cover;
+	object-position: cover cover;
+}
+
+.grid h4{
+	width: 100%;
+	height: 100%;
+	background-color: #023047;
+	opacity: 0;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+	transition: all 0.8s ease;
+	color: #fff;
+	font-size: 20px ;
+}
+
+.grid h4:hover{
+	opacity: 0.9;
+}
+
+#calculadora, #calendar, #edad{
+	text-align: center;
+	width: 25%;
+	padding: 10px 5px;
+	z-index: 100;
+}
+
+#projects button{
+	padding: 3px 6px;
+	z-index: 100;
+}
+
+#popup{
+	position: fixed;
+	border-radius: 15px;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 600px;
+	padding: 50px;
+	z-index: 1500;
+	background: red;
+	visibility: hidden;
+	opacity: 0;
+	transition: all 0.8s ease;
+}
+
+#popup.active{
+	visibility: visible;
+	opacity: 1;	
+}
+
+#projects.blur.active{
+	filter: blur(25px);
+	pointer-events: none;
+	user-select: none;
+}
+
+#popup a{
+	color: blue;
+	text-decoration: none;
+	z-index: 2000;
+}
+
+#skills>div{
+	z-index: 250;
+	grid-gap:2.5em;
+	display:grid;
+	grid-template-columns:1fr 1fr 1fr 1fr;
+}
+
+#skills img{
+	border-radius:1rem;
+	cursor:context-menu;
+	max-width:7rem
+}
+
+#skills>div>div{
+	position:relative;
+	margin-top: 40px;
+	align-items: center;
+	align-content: center;
+}
+
+#skills span{
+	background-color:#219ebc;
+	border-radius:.5rem;
+	left:50%;
+	opacity:0;
+	padding:.5rem 0;
+	pointer-events:none;
+	position:absolute;
+	text-align:center;
+	top:-40px;
+	transform:translate(-60px,10px);
+	transition:opacity .3s ease,transform .3s ease;
+	width:120px;
+	z-index:1;
+	color: #fff;
+}
+
+#skills>div>div:hover span{
+	opacity:1;
+	transform:translate(-60px)
+}
+
+#skills span:after{
+	border:5px solid transparent;
+	border-top-color:#219ebc;
+	content:"";
+	left:50%;
+	margin-left:-5px;
+	position:absolute;
+	top:100%
+}
+
+/*ESTILO CALENDARIO*/
+.dia{
+	height: 50px;
+	width: 50px;
+	float: left;
+	border: 1px solid #000;
+}
+
+#calendario{
+	margin-top: 10px;
+	margin: auto;
+}
+
+/*ESTILOS CALCULADORA*/
+.main-calc{
+	height: 75vh;	
+}
+
+#gui-calc{
+	margin: auto;
+	width: 250px;
+	background: slategray;
+	border-radius: 10px;
+	box-shadow:0px 3px 6px rgba(0,0,0,0.4);
+}
+
+#pantalla1{
+	height: 25px;
+	background:rgb(200,255,200);
+	padding-top: 10px;
+	border-radius: 10px 10px 0px 0px;
+	box-shadow:0px 3px 6px rgba(0,0,0,0.4) inset;
+	text-align: left;
+	font-family: lcdbig;
+	font-size: 20px;
+}
+
+#pantalla2{
+	height: 40px;
+	background:rgb(200,255,200);
+	border-radius: 0px 0px 10px 10px;
+	text-align: right;
+	font-family: lcdbig;
+	font-size: 35px;
+}
+
+#gui-calc button{
+	width: 50px;
+	height: 50px;
+	border-radius: 10px;	
+	border: none;
+	box-shadow:0px 3px 6px rgba(0,0,0,0.4);
+	background: rgb(2,0,36);
+	background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(142,142,142,1) 15%, rgba(255,255,255,1) 100%);
+}
+
+table tr td{
+	text-align: center;
+}
+
+.lista {
+	position: relative;
+	display: inline-block;
+	padding-top: 12px;
+}
+
+.lista:hover > .lista-menu {
+	transform: translateY(0);
+	opacity: 1;
+	visibility: visible;
+}
+
+.lista-menu {
+	position: absolute;
+	bottom: 100%;
+	width: 100%;
+	z-index: 1000;
+	text-align: left;
+	background-color: #fff;
+	background-clip: padding-box;
+	border-radius: 15px;
+	box-shadow: 0px 2px 25px 0px rgba(0, 0, 0, 0.14);
+	transition: all .2s ease-in-out;
+	transform: translateY(1rem);
+	opacity: 0;
+	visibility: hidden;
+}
+
+.lista-item {
+	display: block;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+	padding: 20px 40px;
+    text-decoration: none;
+    color: #023047;
+    transition: all 0.5s;
+}
+
+.lista-item:hover, .lista-item:focus, .dropdown-divider:hover {
+	background-color: #219ebc;
+	cursor: pointer;
+	color: #fff;
+}
+
+.lista-item i{
+	font-size: 20px;
+	margin-right: 20px;
+}
+
+.lista-menu.show {
+	display: block;
+	opacity 1;
+}
+
+.dropdown-divider {
+	border-top: 1px solid #e7e7e7; 
+}
+
+.contactbtn {
+	color: #fff;
+	padding: 20px 40px;
+	background-color: #fb8500; 
+	display: inline-block;
+	vertical-align: middle;
+	border-radius: 15px; 
+	box-shadow: 0px 23px 28px -24px rgba(212, 143, 9, 0.65);
+	transition: all 0.8s;
+	font-size: 24px;
+}
+
+.contactbtn:hover {
+	cursor: pointer;
+	background-color: #ffb703;
+}
+
+.copy-notification {
+	color: #fff;
+	background-color: #219ebc;
+	padding: 20px 40px;
+	border-radius: 15px;
+	display: none; 
+	position: fixed;
+	bottom: 20px;
+	left: 20px;
+}
+
+/*ESTILO DEL FOOTER*/
+footer{
+	background: #023047;
+	font-size: 1.2em;
+	color: #FFF;
+	padding: 20px;	
+	text-align: center;
+}
