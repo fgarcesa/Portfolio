@@ -9,7 +9,7 @@ Felipe Garcés Acero - Full stack web developer
 
 ## Visit live web 🌎
 
-[GitHub Pages](https://fgarcesa.github.io/Portfolio/)
+[GitHub Pages](https://fgarcesa.github.io/Portfolio/ target="_BLANK")
 
 ## Contact 📫
 
