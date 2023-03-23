@@ -28,26 +28,26 @@ $(document).ready(function(){
 	});
 })
 
-$(document).ready(function(){
-	$(".projectbtn").click(function(){
-		$(".blur").addClass("active");
-		$("#popup").addClass("active");
-		$('body').css({'overflow':'hidden'});
-  		$(document).bind('scroll')
-  		$("#btnup").removeClass("active");
-	})
-})
+// $(document).ready(function(){
+// 	$(".projectbtn").click(function(){
+// 		$(".blur").addClass("active");
+// 		$("#popup").addClass("active");
+// 		$('body').css({'overflow':'hidden'});
+//   		$(document).bind('scroll')
+//   		$("#btnup").removeClass("active");
+// 	})
+// })
 
-$(document).ready(function(){
-	$(".close").click(function(){
-		$(".blur").removeClass("active");
-		$("#popup").removeClass("active");
-		$(document).unbind('scroll'); 
-  		$('body').css({'overflow':'visible'});
-  		$("#btnup").addClass("active");
-  		verScroll()
-	})
-})
+// $(document).ready(function(){
+// 	$(".close").click(function(){
+// 		$(".blur").removeClass("active");
+// 		$("#popup").removeClass("active");
+// 		$(document).unbind('scroll'); 
+//   		$('body').css({'overflow':'visible'});
+//   		$("#btnup").addClass("active");
+//   		verScroll()
+// 	})
+// })
 
 $(document).ready(function () {
 	$(".clipboard").click(function (event) {

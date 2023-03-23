@@ -371,7 +371,7 @@ section p{
 	z-index: 100;
 }
 
-#popup{
+/* #popup{
 	position: fixed;
 	border-radius: 15px;
 	top: 40%;
@@ -401,7 +401,7 @@ section p{
 	color: blue;
 	text-decoration: none;
 	z-index: 2000;
-}
+} */
 
 #skills>div{
 	z-index: 250;
