@@ -539,4 +539,16 @@ footer{
 		left: auto;
 		display: block;
 	}
+
+	#banner ul li{
+	margin-bottom: 50px;
+	}
+
+	#skills img{
+		max-width:3rem
+	}
+
+	.btnup{
+		display: none;
+	}
 }
