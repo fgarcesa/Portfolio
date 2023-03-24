@@ -513,7 +513,7 @@ footer{
 
 	#banner{
 		
-		min-height: 75vh;
+		min-height: 45vh;
 		
 	}
 
@@ -538,7 +538,6 @@ footer{
 		top: 150px;
 		left: auto;
 		display: block;
-		margin-bottom: 20px;
 	}
 
 	#banner ul li{
