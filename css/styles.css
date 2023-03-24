@@ -538,10 +538,11 @@ footer{
 		top: 150px;
 		left: auto;
 		display: block;
+		margin-bottom: 20px;
 	}
 
 	#banner ul li{
-	margin-bottom: 50px;
+		margin-bottom: 50px;
 	}
 
 	#skills img{
