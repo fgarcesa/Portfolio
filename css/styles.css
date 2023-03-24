@@ -8,12 +8,6 @@
 	scroll-behavior: smooth;
 }
 
-/*IMPORTO LAS FUENTES PARA CALCULADORA*/
-@font-face {
-    font-family: lcdbig;
-    src: url("DSDIGI.TTF");
-}
-
 /*ESTILO DEL BODY*/
 body{
 	font-family: lato;
@@ -359,49 +353,10 @@ section p{
 	opacity: 0.9;
 }
 
-#calculadora, #calendar, #edad{
-	text-align: center;
-	width: 25%;
-	padding: 10px 5px;
-	z-index: 100;
-}
-
 #projects button{
 	padding: 3px 6px;
 	z-index: 100;
 }
-
-/* #popup{
-	position: fixed;
-	border-radius: 15px;
-	top: 40%;
-	left: 50%;
-	transform: translate(-50%,-50%);
-	width: 600px;
-	padding: 50px;
-	z-index: 1500;
-	background: red;
-	visibility: hidden;
-	opacity: 0;
-	transition: all 0.8s ease;
-}
-
-#popup.active{
-	visibility: visible;
-	opacity: 1;	
-}
-
-#projects.blur.active{
-	filter: blur(25px);
-	pointer-events: none;
-	user-select: none;
-}
-
-#popup a{
-	color: blue;
-	text-decoration: none;
-	z-index: 2000;
-} */
 
 #skills>div{
 	z-index: 250;
@@ -453,66 +408,6 @@ section p{
 	margin-left:-5px;
 	position:absolute;
 	top:100%
-}
-
-/*ESTILO CALENDARIO*/
-.dia{
-	height: 50px;
-	width: 50px;
-	float: left;
-	border: 1px solid #000;
-}
-
-#calendario{
-	margin-top: 10px;
-	margin: auto;
-}
-
-/*ESTILOS CALCULADORA*/
-.main-calc{
-	height: 75vh;	
-}
-
-#gui-calc{
-	margin: auto;
-	width: 250px;
-	background: slategray;
-	border-radius: 10px;
-	box-shadow:0px 3px 6px rgba(0,0,0,0.4);
-}
-
-#pantalla1{
-	height: 25px;
-	background:rgb(200,255,200);
-	padding-top: 10px;
-	border-radius: 10px 10px 0px 0px;
-	box-shadow:0px 3px 6px rgba(0,0,0,0.4) inset;
-	text-align: left;
-	font-family: lcdbig;
-	font-size: 20px;
-}
-
-#pantalla2{
-	height: 40px;
-	background:rgb(200,255,200);
-	border-radius: 0px 0px 10px 10px;
-	text-align: right;
-	font-family: lcdbig;
-	font-size: 35px;
-}
-
-#gui-calc button{
-	width: 50px;
-	height: 50px;
-	border-radius: 10px;	
-	border: none;
-	box-shadow:0px 3px 6px rgba(0,0,0,0.4);
-	background: rgb(2,0,36);
-	background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(142,142,142,1) 15%, rgba(255,255,255,1) 100%);
-}
-
-table tr td{
-	text-align: center;
 }
 
 .lista {
