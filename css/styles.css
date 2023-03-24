@@ -537,5 +537,6 @@ footer{
 	#banner ul{
 		top: 150px;
 		left: auto;
+		display: block;
 	}
 }
