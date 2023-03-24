@@ -505,3 +505,37 @@ footer{
 	padding: 20px;	
 	text-align: center;
 }
+
+@media (max-width: 700px){
+	#header img{
+		width: 50%;
+	}
+
+	#banner{
+		
+		min-height: 35vh;
+		
+	}
+
+	#banner img{
+		display: none;
+	}
+
+	.texto-banner{	
+		left: auto;
+		top: 20px;
+	}
+	
+	#banner h1{
+		font-size: 32px;
+	}
+	
+	#banner h2{
+		font-size: 24px;
+	}
+	
+	#banner ul{
+		top: 150px;
+		left: auto;
+	}
+}
